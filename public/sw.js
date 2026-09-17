@@ -1,4 +1,4 @@
-const CACHE = 'morokika-store-v6'
+const CACHE = 'morokika-store-v7'
 const CORE = [
   '/',
   '/manifest.webmanifest',

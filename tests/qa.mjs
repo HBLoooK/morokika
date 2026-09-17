@@ -48,7 +48,7 @@ try {
   for(const icon of manifest.icons) assert.ok((await page.request.get(`${baseURL}${icon.src}`)).ok(),`Missing PWA icon ${icon.src}`)
   const serviceWorkerResponse=await page.request.get(`${baseURL}/sw.js`)
   assert.ok(serviceWorkerResponse.ok())
-  assert.match(await serviceWorkerResponse.text(),/morokika-store-v6/)
+  assert.match(await serviceWorkerResponse.text(),/morokika-store-v7/)
   assert.ok((await page.request.get(`${baseURL}/sitemap.xml`)).ok())
   assert.ok((await page.request.get(`${baseURL}/robots.txt`)).ok())
   assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://morokika.netlify.app/')
@@ -370,7 +370,7 @@ try {
   const popupPromise=desktopContext.waitForEvent('page')
   await page.getByRole('button', {name:/Transmettre sur WhatsApp/}).click()
   const popup=await popupPromise
-  assert.match(decodeURIComponent(popup.url()),/(?:wa\.me\/212676683835|phone=212676683835)/)
+  assert.match(decodeURIComponent(popup.url()),/(?:wa\.me\/212708014975|phone=212708014975)/)
   await popup.close()
   assert.ok(await page.getByRole('heading', {name:/Une dernière étape/}).isVisible())
   assert.match(await page.locator('.order-success').innerText(), /#MK-\d{6}-\d{4}/)
