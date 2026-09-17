@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /checkout
+Disallow: /admin
+Disallow: /favoris
+
+Sitemap: https://morokika.netlify.app/sitemap.xml

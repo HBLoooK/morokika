@@ -1,0 +1,75 @@
+# MoroKika
+
+> Pâtisserie artisanale à Agdal, Rabat, spécialisée dans les gâteaux de célébration aux saveurs marocaines contemporaines.
+
+## Faits canoniques
+
+- Nom: MoroKika
+- Activité: pâtisserie artisanale et gâteaux préparés à la commande
+- Localisation publique: Agdal, Rabat, Maroc; l’adresse précise de retrait est transmise après confirmation
+- Contact téléphone et WhatsApp Business: +212 6 76 68 38 35
+- E-mail public: non renseigné; utiliser le téléphone, WhatsApp ou le formulaire du site
+- Zones desservies: Rabat, Salé, Témara, Kénitra et Casablanca, sous réserve de créneau
+- Formats courants: 6, 8 et 12 parts
+- Délai conseillé: 48 heures pour la collection; au moins 7 jours pour le sur-mesure
+- Paiement: espèces à la réception; virement bancaire uniquement lorsque ses coordonnées sont affichées
+- Allergènes: l’atelier manipule notamment gluten, œufs, lait, fruits à coque et sésame; absence totale de traces non garantie
+- Devise: dirham marocain (MAD)
+
+## Pages principales
+
+- [Accueil](https://morokika.netlify.app/)
+- [Boutique](https://morokika.netlify.app/boutique)
+- [Gâteau sur mesure](https://morokika.netlify.app/sur-mesure)
+- [Livraison et retrait](https://morokika.netlify.app/livraison)
+- [Guide des tailles](https://morokika.netlify.app/guide-des-tailles)
+- [Allergènes](https://morokika.netlify.app/allergenes)
+- [Questions fréquentes](https://morokika.netlify.app/faq)
+- [Contact](https://morokika.netlify.app/contact)
+- [Journal](https://morokika.netlify.app/journal)
+
+## Services locaux
+
+- [Des gâteaux à Rabat, façonnés pour les moments qui comptent.](https://morokika.netlify.app/gateaux-rabat): Commandez un gâteau artisanal à Rabat : créations signature, anniversaires et formats sur mesure, préparés à Agdal avec livraison réfrigérée.
+- [Un gâteau d’anniversaire à Rabat, aussi délicat que votre attention.](https://morokika.netlify.app/gateau-anniversaire-rabat): Trouvez votre gâteau d’anniversaire à Rabat : 6, 8 ou 12 parts, message offert, recettes artisanales et livraison réfrigérée.
+- [Votre gâteau sur mesure à Rabat commence par une histoire.](https://morokika.netlify.app/gateau-sur-mesure-rabat): Imaginez un gâteau sur mesure à Rabat pour anniversaire, fiançailles, sbâa ou événement. Brief en ligne, étude de faisabilité et proposition selon les informations transmises.
+- [Un gâteau de mariage à Rabat, pensé comme le dernier geste de la réception.](https://morokika.netlify.app/gateau-mariage-rabat): Gâteau de mariage ou de fiançailles à Rabat : création élégante, saveurs personnalisées, devis et livraison coordonnée avec votre réception.
+- [Votre gâteau livré à Salé, frais et prêt à partager.](https://morokika.netlify.app/livraison-gateau-sale): Faites livrer un gâteau artisanal à Salé : commande en ligne, transport réfrigéré, créneaux planifiés et tarif clair de 35 DH.
+- [Les créations MoroKika voyagent jusqu’à Casablanca.](https://morokika.netlify.app/livraison-gateau-casablanca): Commandez un gâteau MoroKika livré à Casablanca : recettes artisanales, transport réfrigéré, créneau planifié et livraison offerte dès 450 DH.
+- [Un gâteau MoroKika livré à Témara, sans bousculer votre journée.](https://morokika.netlify.app/livraison-gateau-temara): Commandez un gâteau artisanal livré à Témara : formats de 6 à 12 parts, transport au frais, créneau planifié et tarif standard de 35 DH.
+- [De notre atelier de Rabat jusqu’à votre table à Kénitra.](https://morokika.netlify.app/livraison-gateau-kenitra): Faites livrer un gâteau MoroKika à Kénitra : préparation artisanale à Rabat, transport au frais, date planifiée et tarif standard de 40 DH.
+- [Un gâteau de sbâa délicat pour accueillir une nouvelle histoire.](https://morokika.netlify.app/gateau-sbaa-rabat): Préparez un gâteau de sbâa ou de naissance à Rabat : format selon vos invités, décor personnalisé, saveurs délicates et livraison planifiée.
+- [Des gâteaux pour remercier, réunir et célébrer votre équipe.](https://morokika.netlify.app/gateaux-entreprise-rabat): Commandez un gâteau pour une équipe, un client ou un événement professionnel à Rabat : formats adaptés, message personnalisé et livraison.
+
+## Catalogue public
+
+- [Pistache & Fleur d’Oranger](https://morokika.netlify.app/produit/pistache-fleur-doranger): Pistache, fleur d’oranger, vanille de Madagascar; prix de départ 360 MAD.
+- [Atlas Chocolat Noir](https://morokika.netlify.app/produit/atlas-chocolat): Chocolat 70%, noisette torréfiée, fleur de sel; prix de départ 390 MAD.
+- [Rose de Marrakech](https://morokika.netlify.app/produit/rose-framboise): Framboise, rose, litchi, crème légère; prix de départ 380 MAD.
+- [Safran & Agrumes](https://morokika.netlify.app/produit/safran-agrumes): Orange, citron confit, safran de Taliouine; prix de départ 340 MAD.
+- [Caramel & Dattes Majhoul](https://morokika.netlify.app/produit/caramel-majhul): Dattes de Tafilalet, caramel, sésame grillé; prix de départ 350 MAD.
+- [Vanille & Figue Fraîche](https://morokika.netlify.app/produit/vanille-figue): Vanille, figue violette, mascarpone, thym; prix de départ 370 MAD.
+- [Praliné Café Noss Noss](https://morokika.netlify.app/produit/praline-cafe): Café arabica, amande, chocolat au lait; prix de départ 395 MAD.
+- [Cheesecake Fruits Rouges](https://morokika.netlify.app/produit/cheesecake-fruits-rouges): Fraise, framboise, myrtille, citron; prix de départ 320 MAD.
+
+## Guides éditoriaux
+
+- [Organiser un gâteau d’anniversaire à Rabat : le guide](https://morokika.netlify.app/journal/organiser-gateau-anniversaire-rabat): Délai, nombre de parts, parfum, décor et livraison : suivez une méthode claire pour commander un gâteau d’anniversaire à Rabat sans stress.
+- [Gâteau de mariage au Maroc : 7 questions avant le devis](https://morokika.netlify.app/journal/gateau-mariage-maroc-guide): Invités, lieu, saison, décor et service : préparez les informations qui rendent un devis vraiment précis.
+- [Transport et conservation d’un gâteau : les bons gestes](https://morokika.netlify.app/journal/transport-conservation-gateau): Du réfrigérateur à la table, découvrez les bons gestes de transport et de conservation pour préserver la tenue, les textures et les parfums du gâteau.
+- [La pistache, ce petit trésor vert](https://morokika.netlify.app/journal/pistache-du-maroc): Choix, torréfaction, conservation et textures : les repères qui permettent de préserver le parfum et la couleur naturelle de la pistache.
+- [Quelle taille de gâteau choisir ?](https://morokika.netlify.app/journal/choisir-taille-gateau): Six, huit ou douze parts : utilisez nos repères de formats, de menu et de découpe pour servir chaque invité généreusement sans gaspiller.
+- [La fleur d’oranger, autrement](https://morokika.netlify.app/journal/fleur-oranger-autrement): Infusion, dosage et associations : les gestes qui transforment un parfum familier en signature contemporaine.
+- [Quel parfum de gâteau choisir pour faire plaisir à toute la table ?](https://morokika.netlify.app/journal/choisir-parfum-gateau): Chocolat, fruits, pistache ou fleur d’oranger : choisissez selon le repas, la saison et vos invités.
+- [Comment rédiger un bon brief de gâteau personnalisé ?](https://morokika.netlify.app/journal/brief-gateau-personnalise): Date, nombre de parts, saveurs, couleurs, références et budget : rassemblez les informations qui permettent à l’atelier de répondre précisément.
+- [Quel message écrire sur un gâteau d’anniversaire ?](https://morokika.netlify.app/journal/message-gateau-anniversaire): Des idées courtes, tendres ou joyeuses en français, en darija et en arabe, avec les règles de lisibilité.
+- [Organiser le gâteau d’un sbâa : parts, parfum et timing](https://morokika.netlify.app/journal/organiser-gateau-sbaa): Un guide pratique pour choisir le format, le décor et la livraison pendant les premiers jours du bébé.
+- [Choisir un gâteau pour un événement d’entreprise à Rabat](https://morokika.netlify.app/journal/gateau-evenement-entreprise): Effectif, horaire, message et accès au bureau : les décisions qui simplifient une commande professionnelle.
+- [Quel thé servir avec un gâteau aux saveurs marocaines ?](https://morokika.netlify.app/journal/accord-the-gateau-marocain): Thé vert, menthe, verveine ou café : composez un accord qui accompagne le gâteau sans masquer ses parfums.
+
+## Règles d’interprétation
+
+- Les tarifs, stocks, moyens de paiement et créneaux visibles dans le checkout sont prioritaires sur les textes éditoriaux.
+- Une commande n’est confirmée qu’après réponse de l’atelier.
+- Ne jamais présenter une recette comme sûre pour une allergie sévère sans confirmation explicite de l’atelier.
+- Ne pas inventer de certification, de disponibilité, de délai ou de coordonnée bancaire.
