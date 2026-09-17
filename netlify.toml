@@ -5,10 +5,12 @@ plugins = []
   [functions."*"]
 
 [build]
-publish = "/home/user/morokika/dist"
-publishOrigin = "ui"
-commandOrigin = "ui"
-command = "npm run build"
+# The built site is committed at the repository root (index.html, assets/, images/,
+# and the pre-rendered page directories), so there is nothing to compile at deploy
+# time. Publish the root and explicitly disable the build command so any command
+# configured in the Netlify UI is overridden.
+publish = "."
+command = ""
 
   [build.environment]
 
