@@ -1,2 +1,8 @@
-# Local Netlify folder
-.netlify
+node_modules/
+dist/
+.netlify/
+tests/*.png
+.env
+.env.*
+!.env.example
+.DS_Store

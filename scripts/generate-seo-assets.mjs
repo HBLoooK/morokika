@@ -1,0 +1,24 @@
+import {mkdir,writeFile} from 'node:fs/promises'
+import {coreSeoPages} from '../src/coreSeoContent.js'
+import {seoLandingPages,journalArticles,commerceLandingPages} from '../src/seoContent.js'
+import {products} from '../src/catalog.js'
+const origin='https://morokika.netlify.app',today='2026-09-17'
+const esc=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&apos;')
+const rows=[]
+for(const page of coreSeoPages)rows.push({path:page.path,lastmod:today,priority:page.path==='/'?'1.0':['/sur-mesure','/livraison'].includes(page.path)?'0.8':['/confidentialite','/cgv','/mentions-legales'].includes(page.path)?'0.3':'0.7',image:page.image,caption:page.imageAlt})
+for(const page of commerceLandingPages)rows.push({path:page.path,lastmod:today,priority:page.path==='/boutique'?'0.9':'0.8',image:page.image,caption:page.metaDescription})
+for(const product of products)rows.push({path:`/produit/${product.id}`,lastmod:today,priority:'0.8',image:product.image,caption:`${product.name} — gâteau artisanal MoroKika`})
+for(const page of seoLandingPages)rows.push({path:page.path,lastmod:today,priority:page.path==='/gateaux-rabat'?'0.9':'0.8',image:page.image,caption:page.imageAlt})
+for(const article of journalArticles)rows.push({path:`/journal/${article.slug}`,lastmod:today,priority:['organiser-gateau-anniversaire-rabat','gateau-mariage-maroc-guide','transport-conservation-gateau'].includes(article.slug)?'0.7':'0.6',image:article.image,caption:article.title})
+const seen=new Set(),unique=rows.filter(row=>!seen.has(row.path)&&seen.add(row.path))
+const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${unique.map(row=>`  <url>\n    <loc>${origin}${row.path}</loc>\n    <lastmod>${row.lastmod}</lastmod>\n    <priority>${row.priority}</priority>\n    <image:image><image:loc>${origin}${row.image}</image:loc><image:caption>${esc(row.caption)}</image:caption></image:image>\n  </url>`).join('\n')}\n</urlset>\n`
+await writeFile(new URL('../public/sitemap.xml',import.meta.url),sitemap)
+const localPages=seoLandingPages.map(page=>`- [${page.title}](${origin}${page.path}): ${page.metaDescription}`).join('\n')
+const productPages=products.map(product=>`- [${product.name}](${origin}/produit/${product.id}): ${product.short}; prix de départ ${product.price} MAD.`).join('\n')
+const journalPages=journalArticles.map(article=>`- [${article.title}](${origin}/journal/${article.slug}): ${article.excerpt}`).join('\n')
+const llms=`# MoroKika\n\n> Pâtisserie artisanale à Agdal, Rabat, spécialisée dans les gâteaux de célébration aux saveurs marocaines contemporaines.\n\n## Faits canoniques\n\n- Nom: MoroKika\n- Activité: pâtisserie artisanale et gâteaux préparés à la commande\n- Localisation publique: Agdal, Rabat, Maroc; l’adresse précise de retrait est transmise après confirmation\n- Contact téléphone et WhatsApp Business: +212 6 76 68 38 35\n- E-mail public: non renseigné; utiliser le téléphone, WhatsApp ou le formulaire du site\n- Zones desservies: Rabat, Salé, Témara, Kénitra et Casablanca, sous réserve de créneau\n- Formats courants: 6, 8 et 12 parts\n- Délai conseillé: 48 heures pour la collection; au moins 7 jours pour le sur-mesure\n- Paiement: espèces à la réception; virement bancaire uniquement lorsque ses coordonnées sont affichées\n- Allergènes: l’atelier manipule notamment gluten, œufs, lait, fruits à coque et sésame; absence totale de traces non garantie\n- Devise: dirham marocain (MAD)\n\n## Pages principales\n\n- [Accueil](${origin}/)\n- [Boutique](${origin}/boutique)\n- [Gâteau sur mesure](${origin}/sur-mesure)\n- [Livraison et retrait](${origin}/livraison)\n- [Guide des tailles](${origin}/guide-des-tailles)\n- [Allergènes](${origin}/allergenes)\n- [Questions fréquentes](${origin}/faq)\n- [Contact](${origin}/contact)\n- [Journal](${origin}/journal)\n\n## Services locaux\n\n${localPages}\n\n## Catalogue public\n\n${productPages}\n\n## Guides éditoriaux\n\n${journalPages}\n\n## Règles d’interprétation\n\n- Les tarifs, stocks, moyens de paiement et créneaux visibles dans le checkout sont prioritaires sur les textes éditoriaux.\n- Une commande n’est confirmée qu’après réponse de l’atelier.\n- Ne jamais présenter une recette comme sûre pour une allergie sévère sans confirmation explicite de l’atelier.\n- Ne pas inventer de certification, de disponibilité, de délai ou de coordonnée bancaire.\n`
+await writeFile(new URL('../public/llms.txt',import.meta.url),llms)
+await writeFile(new URL('../public/llms-full.txt',import.meta.url),llms)
+await mkdir(new URL('../public/.well-known',import.meta.url),{recursive:true})
+await writeFile(new URL('../public/.well-known/llms.txt',import.meta.url),llms)
+console.log(`Generated sitemap with ${unique.length} canonical URLs and GEO discovery files.`)

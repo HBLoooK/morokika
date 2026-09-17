@@ -1,0 +1,81 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(self)" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.supabase.co; font-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests" }
+      ]
+    },
+    {
+      "source": "/admin/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    },
+    {
+      "source": "/checkout",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    },
+    {
+      "source": "/favoris",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Service-Worker-Allowed", "value": "/" }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/sur-mesure", "destination": "/sur-mesure/index.html" },
+    { "source": "/la-maison", "destination": "/la-maison/index.html" },
+    { "source": "/journal", "destination": "/journal/index.html" },
+    { "source": "/livraison", "destination": "/livraison/index.html" },
+    { "source": "/guide-des-tailles", "destination": "/guide-des-tailles/index.html" },
+    { "source": "/allergenes", "destination": "/allergenes/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/faq", "destination": "/faq/index.html" },
+    { "source": "/confidentialite", "destination": "/confidentialite/index.html" },
+    { "source": "/cgv", "destination": "/cgv/index.html" },
+    { "source": "/mentions-legales", "destination": "/mentions-legales/index.html" },
+    { "source": "/gateaux-rabat", "destination": "/gateaux-rabat/index.html" },
+    { "source": "/gateau-anniversaire-rabat", "destination": "/gateau-anniversaire-rabat/index.html" },
+    { "source": "/gateau-sur-mesure-rabat", "destination": "/gateau-sur-mesure-rabat/index.html" },
+    { "source": "/gateau-mariage-rabat", "destination": "/gateau-mariage-rabat/index.html" },
+    { "source": "/livraison-gateau-sale", "destination": "/livraison-gateau-sale/index.html" },
+    { "source": "/livraison-gateau-casablanca", "destination": "/livraison-gateau-casablanca/index.html" },
+    { "source": "/livraison-gateau-temara", "destination": "/livraison-gateau-temara/index.html" },
+    { "source": "/livraison-gateau-kenitra", "destination": "/livraison-gateau-kenitra/index.html" },
+    { "source": "/gateau-sbaa-rabat", "destination": "/gateau-sbaa-rabat/index.html" },
+    { "source": "/gateaux-entreprise-rabat", "destination": "/gateaux-entreprise-rabat/index.html" },
+    { "source": "/boutique", "destination": "/boutique/index.html" },
+    { "source": "/collections/signatures", "destination": "/collections/signatures/index.html" },
+    { "source": "/collections/anniversaires", "destination": "/collections/anniversaires/index.html" },
+    { "source": "/collections/cadeaux", "destination": "/collections/cadeaux/index.html" },
+    { "source": "/produit/pistache-fleur-doranger", "destination": "/produit/pistache-fleur-doranger/index.html" },
+    { "source": "/produit/atlas-chocolat", "destination": "/produit/atlas-chocolat/index.html" },
+    { "source": "/produit/rose-framboise", "destination": "/produit/rose-framboise/index.html" },
+    { "source": "/produit/safran-agrumes", "destination": "/produit/safran-agrumes/index.html" },
+    { "source": "/produit/caramel-majhul", "destination": "/produit/caramel-majhul/index.html" },
+    { "source": "/produit/vanille-figue", "destination": "/produit/vanille-figue/index.html" },
+    { "source": "/produit/praline-cafe", "destination": "/produit/praline-cafe/index.html" },
+    { "source": "/produit/cheesecake-fruits-rouges", "destination": "/produit/cheesecake-fruits-rouges/index.html" },
+    { "source": "/journal/organiser-gateau-anniversaire-rabat", "destination": "/journal/organiser-gateau-anniversaire-rabat/index.html" },
+    { "source": "/journal/gateau-mariage-maroc-guide", "destination": "/journal/gateau-mariage-maroc-guide/index.html" },
+    { "source": "/journal/transport-conservation-gateau", "destination": "/journal/transport-conservation-gateau/index.html" },
+    { "source": "/journal/pistache-du-maroc", "destination": "/journal/pistache-du-maroc/index.html" },
+    { "source": "/journal/choisir-taille-gateau", "destination": "/journal/choisir-taille-gateau/index.html" },
+    { "source": "/journal/fleur-oranger-autrement", "destination": "/journal/fleur-oranger-autrement/index.html" },
+    { "source": "/journal/choisir-parfum-gateau", "destination": "/journal/choisir-parfum-gateau/index.html" },
+    { "source": "/journal/brief-gateau-personnalise", "destination": "/journal/brief-gateau-personnalise/index.html" },
+    { "source": "/journal/message-gateau-anniversaire", "destination": "/journal/message-gateau-anniversaire/index.html" },
+    { "source": "/journal/organiser-gateau-sbaa", "destination": "/journal/organiser-gateau-sbaa/index.html" },
+    { "source": "/journal/gateau-evenement-entreprise", "destination": "/journal/gateau-evenement-entreprise/index.html" },
+    { "source": "/journal/accord-the-gateau-marocain", "destination": "/journal/accord-the-gateau-marocain/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
